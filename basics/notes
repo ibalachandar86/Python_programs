@@ -1,0 +1,159 @@
+https://www.edureka.co/blog/python-libraries/
+https://www.interviewbit.com/blog/python-libraries/
+
+
+# Python is High Level Programming Knowledge
+# Python Source code -> compilation/Interpretation -> Machine code  -> Execute by computer
+Compilation -> Compile the code only one, anyone can run the compiled executable code
+Interpretation -> Interprets code every time, everyone needs interpreter to run
+# Python is a interpreter language also known as scripting language.
+# Python interpreter behaviour
+1) Typically reads data from top to bottom
+2) Throws error based checking
+   Lexis => Keywords restriction check
+   Syntax => Syntax error # input function syntax error missing () it should be input()
+   Semantics => input(a, b) syntax right but semantic error because input() function can accept only one argument
+
+# Variable
+Variable name must start with a letter or underscore sign
+a = "Hello"
+_a = "World"
+print(a)
+print(type(a))
+
+# Python Keywords from & global cannot be used as a variable name
+# from = "xxx" # Error
+# global = "yyy" # Error
+
+# Data Types
+a = 'hello' # String
+print(type(a))
+b = 10      # Integer
+print(type(b))
+c = 10.2    # Float
+print(type(c))
+d = True    # Boolean Capital T
+print(type(d))
+
+# Numerical representation
+a = 10000.0 = a = 1E4
+b = 0.0001 = b = 1E-4
+a = 5000000000 = a = 5_000_000_000 # Better representation
+print(0o123) # Octal number
+print(0x123) # Hexa number
+Be Careful with Float the float variable are always round off and saved example,
+print(1.0) =>
+print(1.0 + 1.0 + 1.0) => 3.0 some case it will be 0.300000000004
+
+# Print
+print('Let it' + 'snow') # Let itsnow
+print('And', 'snow') # And snow (Add space if u add ,)
+
+# Operators
+2 + 5
+10 - 5
+6 * 6
+# Standard Division
+6/2 => 3.0
+7/2 => 3.5
+# Integer Division - Imp
+6//2 => 3
+7//2 => 3
+# Modulus Division - Imp
+6 % 2 = 0
+7 % 2 = 1
+# 5/0 => ZeroDivisionError: division by zero
+# power operator
+2 ** 4 = 16
+
+# Reassigning variables
+a = 10
+print(a)
+a = a + 10
+print(a)
+a += 10
+a *= 5
+a -= 5
+a /= 5
+b = 'abc' + 'def'
+b = 5 + 5
+b = 5 * 5
+b = '5' + '5'
+b = '5' + 5 # Concatenation Error
+magical_number = 3 ** 3
+magical_number *= 2.
+print(magical_number)
+
+# Input function
+print('enter ur name')
+un = input() # Imp input function always consider the values as String unless type casting implemented
+print('Hello', un)
+# Function in Python 1) Cause some effect 2) Return a value
+a = 'Hello' + un
+
+# Input - With Type casting
+a = float(input("type a number"))
+print("divided value", a/5)
+b = int(input("type a number"))
+print("multiply value", b*5)
+print("Str value " + str(b))
+
+# Operators
+print(+2)    # Unary Operator  .. since + is using 1 operand or variable
+print(5 + 6) # Binary Operator .. since + is using 2 operands or variables
+
+# Order of operators
+P – Parentheses
+E – Exponentiation (Start from left <- right Ex: print(2**2**3) = 256 not 12 ) other operators are left -> right
+MDAS
+M – Multiplication
+D – Division
+A – Addition
+S – Subtraction
+((((6+4)*2)-10)//2)-4*2 = -3.0
+
+# Bitwise Operator
+1 byte = 8 bits
+1 KB = 1000 bytes = 8000 bits
+       (sometimes 1024 bytes)
+1 MB = 1000 * 1000 bytes
+&
+|
+~
+^
+<<
+>>
+first_bit = 1
+second_bit = 0
+print(first_bit & second_bit) => 0 (Logical AND kind of multiply)
+print(first_bit | second_bit) => 1  (Logical OR max number ll come as output always)
+print(first_bit ^ second_bit) => 1   (Exclusive OR max number ll come as output always but 1 1 gives 0)
+print(~0) => -1 (Logical negation)
+Shift operators:
+12 << 1 = 24 (Two times) (Original value * 2)
+12 << 2 = 48 (Four times) (Original value * 4)
+12 >> 1 = 6 (Two times) (Original value / 2)
+12 >> 2 = 3 (Four times) (Original value / 4)
+
+
+
+
+
+
+
+Strings:
+print(len("bala"))
+
+Print:
+print("Hello", end='.') # End default is newline character
+print("world")
+Hello.world
+print("Hello", "world", sep="-", end='.')
+Hello-world.
+
+
+
+
+
+
+
