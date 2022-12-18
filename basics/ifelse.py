@@ -1,8 +1,10 @@
 # Logical Operators
+"""
 < Less than
 > Greater than
 <= Less than equal
 >= Greater than equal
+"""
 
 a = int(input("Type a number: "))
 if a == 10:
